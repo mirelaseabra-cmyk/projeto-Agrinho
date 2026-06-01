@@ -1,1 +1,27 @@
-index.html
+<div class="simulation-container">
+  <div class="control-panel">
+    <h2>Agro<span>Forte</span></h2>
+    <p>Ajuste o indicador para equilibrar a balança do futuro.</p>
+    
+    <div class="slider-wrapper">
+      <span class="label">Produção</span>
+      <input type="range" id="balanceSlider" min="0" max="100" value="50">
+      <span class="label">Preservação</span>
+    </div>
+  </div>
+
+  <div class="hud-metrics">
+    <div class="metric-box" id="foodMetric">
+      <span class="title">Alimento Gerado</span>
+      <div class="bar"><div class="fill"></div></div>
+    </div>
+    <div class="metric-box" id="natureMetric">
+      <span class="title">Saúde do Planeta</span>
+      <div class="bar"><div class="fill"></div></div>
+    </div>
+  </div>
+
+  <canvas id="ecosystemCanvas"></canvas>
+  
+  <div class="success-message" id="successMsg">Equilíbrio Perfeito Atingido! 🌱✨</div>
+</div>
